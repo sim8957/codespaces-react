@@ -1,0 +1,20 @@
+h1{
+    color: rgb(56,54,255)
+}
+h1:hover{
+    font-size: 50px;
+    color:chocolate;
+    color:red;
+
+    }
+img{
+    border: solid red 2px;
+    border-radius:30%;
+    box-shadow: 23px 9px 34px -9px rgba(0,0,0,0.45);
+-webkit-box-shadow: 23px 9px 34px -9px rgba(0,0,0,0.45);
+-moz-box-shadow: 23px 9px 34px -9px rgba(0,0,0,0.45);
+transform: rotate(35deg);
+-webkit-transform: rotate(35deg);
+-moz-transform: rotate(35deg);
+}
+}
