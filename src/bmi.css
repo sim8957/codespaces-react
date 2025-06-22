@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(to bottom, #a2d4f4, #ffffff);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #013a63;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px #0077b6;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 2px solid #00b4d8;
+  background-color: #caf0f8;
+  font-size: 1em;
+}
+
+button {
+  background-color: #00b4d8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0077b6;
+  transform: scale(1.1);
+}
+
+img {
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+  max-width: 90%;
+}
+
+.BmiContainer {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 119, 182, 0.4);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+<div className="ocean-wrapper">
+  <div className="glass-container">
+    <h1 className="title">🌊 BMI Calculator</h1>
+    <div className="input-row">
+      <label>Weight</label>
+      <input ref={w_inputRef} placeholder="kg" />
+    </div>
+    <div className="input-row">
+      <label>Height</label>
+      <input ref={h_inputRef} placeholder="cm" />
+    </div>
+    <button onClick={calBmi}>🌟 Calculate</button>
+    <p className="bmi-output">Your BMI: {bmi.toFixed(2)}</p>
+    <Bmitext bmi={bmi} />
+  </div>
+</div>
+
